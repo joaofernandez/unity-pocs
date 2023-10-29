@@ -205,10 +205,11 @@ Transform:
   m_GameObject: {fileID: 282880180}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.8, y: -21.94, z: 0}
+  m_LocalPosition: {x: -13.5, y: -21.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2015750795}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &282880183
@@ -280,6 +281,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b6b6bbb490e540a996a9535b9a2139e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movePoint: {fileID: 2015750795}
+  stopMovement:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!61 &282880186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5739,7 +5744,7 @@ GameObject:
   - component: {fileID: 493527045}
   - component: {fileID: 493527044}
   - component: {fileID: 493527046}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9970,6 +9975,37 @@ Transform:
   - {fileID: 322633173}
   - {fileID: 493527043}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2015750794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2015750795}
+  m_Layer: 0
+  m_Name: PlayerMovePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2015750795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015750794}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 282880182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
