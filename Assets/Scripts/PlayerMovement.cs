@@ -22,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // move camera along character
+        Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
+        
         rb.MovePosition(rb.position + movement * SPEED * Time.fixedDeltaTime);
     }
 }
